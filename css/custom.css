@@ -1,0 +1,97 @@
+/* your styles go here */
+
+/*Galeria*/
+
+.servicios{
+	background: #f2f2f2;
+
+}
+
+.galeria-servicios{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	
+}
+
+.imagen-servicios{
+	width: 25%;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, .5);
+}
+
+.imagen-servicios>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.hover-galeria{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: #043e7dcd;
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hover-galeria img{
+	width: 50px;
+}
+
+.hover-galeria p{
+	color: #fff;
+}
+
+.imagen-servicios:hover .hover-galeria{
+	transform: scale(1);
+}
+/*footer*/
+
+footer{
+	padding: 30px 0 15px 0;
+	margin: auto;
+	overflow: hidden;
+	background:#043e7dcd ;  
+
+}
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	max-resolution: auto;
+	padding-bottom: 30px;
+	border-bottom: 2px solid #ccc;
+}
+
+.contenido-footer{
+	text-align: center;
+}
+
+.contenido-footer h4{
+	color: #fff;
+	border-bottom: 3px solid ;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.contenedor-footer p{
+	color:#ccc;
+}
+
+.titulo-final{
+	text-align: center;
+	font-size: 24px;
+	margin: 10px 0 0  0;
+	color: #fff;
+}
